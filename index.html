@@ -17,13 +17,13 @@
                 <h1 class="heading">Stock Profit & Loss Calculator</h1>
             </header>
             <label class="label" for="initial-price">Intial Price: </label>
-            <input type="number" id="initial-price" class="input" placeholder="Enter purchased stock price here...">
+                <input required type="number" id="initial-price" class="input" placeholder="Enter purchased stock price here...">
             <label class="label" for="stock-quantity">Stock Count: </label>
-            <input type="number" id="stock-quantity" class="input" placeholder="Enter number of stock here...">
+                <input required type="number" id="stock-quantity" class="input" placeholder="Enter number of stock here...">
             <label class="label" for="final-price">Final Price: </label>
-            <input type="number" id="final-price" class="input" placeholder="Enter current price of stock here..."> <br >
+                <input required type="number" id="final-price" class="input" placeholder="Enter current price of stock here..."> <br >
             <button class="button" id="check">Check</button>
-            <div id="output-area"></div>
+            <div style="margin: 0.5rem; font-weight: bold;" id="output-area"></div>
         </section>
     </div>
     <footer class="footer">
@@ -50,5 +50,6 @@
                     </a>              
            </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
