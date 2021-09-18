@@ -19,12 +19,12 @@ function calculateTotal(purchasedPrice, stockCount, currentPrice){
     if(totalCostPrice > totalSellPrice){
         loss = totalCostPrice - totalSellPrice;
         lossPercentage = (loss/purchasedPrice) * 100;
-        showMessage(`You are having loss of ${loss} with loss percentage of ${lossPercentage}%.`);
+        showMessage(`You are having loss of ${loss} with loss percentage of ${lossPercentage.toFixed(2)}%.`);
     }
     else if(totalCostPrice < totalSellPrice){
         profit = totalSellPrice-totalCostPrice;
         profitPercentage = (profit/purchasedPrice)*100;
-        showMessage(`You are having profit of ${profit} with profit percentage of ${profitPercentage}%.`);
+        showMessage(`You are having profit of ${profit} with profit percentage of ${profitPercentage.toFixed(2)}%.`);
     }
     else{
         showMessage(`You are having no profit no loss :)`);
